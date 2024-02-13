@@ -579,6 +579,21 @@ video {
   margin-bottom: 2.5rem;
 }
 
+.mx-5 {
+  margin-left: 1.25rem;
+  margin-right: 1.25rem;
+}
+
+.mx-10 {
+  margin-left: 2.5rem;
+  margin-right: 2.5rem;
+}
+
+.my-3 {
+  margin-top: 0.75rem;
+  margin-bottom: 0.75rem;
+}
+
 .ml-\[92vw\] {
   margin-left: 92vw;
 }
@@ -631,6 +646,10 @@ video {
   margin-bottom: 1.25rem;
 }
 
+.ml-\[60\%\] {
+  margin-left: 60%;
+}
+
 .inline-block {
   display: inline-block;
 }
@@ -681,6 +700,10 @@ video {
 
 .flex-col {
   flex-direction: column;
+}
+
+.items-start {
+  align-items: flex-start;
 }
 
 .items-end {
@@ -990,6 +1013,21 @@ video {
   background-color: rgb(75 85 99 / var(--tw-bg-opacity));
 }
 
+.hover\:bg-purple-800:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(107 33 168 / var(--tw-bg-opacity));
+}
+
+.hover\:bg-\[\#6B4EFF\]:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(107 78 255 / var(--tw-bg-opacity));
+}
+
+.hover\:bg-\[\#5643b4\]:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(86 67 180 / var(--tw-bg-opacity));
+}
+
 .hover\:text-blue-400:hover {
   --tw-text-opacity: 1;
   color: rgb(96 165 250 / var(--tw-text-opacity));
@@ -1023,12 +1061,20 @@ video {
     width: 40vw;
   }
 
+  .sm\:flex-row {
+    flex-direction: row;
+  }
+
   .sm\:items-start {
     align-items: flex-start;
   }
 }
 
 @media (min-width: 768px) {
+  .md\:m-10 {
+    margin: 2.5rem;
+  }
+
   .md\:mx-10 {
     margin-left: 2.5rem;
     margin-right: 2.5rem;
@@ -1059,6 +1105,16 @@ video {
     margin-bottom: 0.5rem;
   }
 
+  .md\:mx-0 {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+
+  .md\:mx-20 {
+    margin-left: 5rem;
+    margin-right: 5rem;
+  }
+
   .md\:mr-5 {
     margin-right: 1.25rem;
   }
@@ -1077,6 +1133,18 @@ video {
 
   .md\:mt-3 {
     margin-top: 0.75rem;
+  }
+
+  .md\:ml-10 {
+    margin-left: 2.5rem;
+  }
+
+  .md\:ml-20 {
+    margin-left: 5rem;
+  }
+
+  .md\:mr-20 {
+    margin-right: 5rem;
   }
 
   .md\:block {
@@ -1125,6 +1193,18 @@ video {
 
   .md\:flex-col {
     flex-direction: column;
+  }
+
+  .md\:items-start {
+    align-items: flex-start;
+  }
+
+  .md\:items-center {
+    align-items: center;
+  }
+
+  .md\:justify-start {
+    justify-content: flex-start;
   }
 
   .md\:justify-end {
