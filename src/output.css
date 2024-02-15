@@ -805,6 +805,10 @@ video {
   border-radius: 0.5rem;
 }
 
+.rounded {
+  border-radius: 0.25rem;
+}
+
 .border {
   border-width: 1px;
 }
@@ -1257,6 +1261,22 @@ video {
 
   .md\:w-\[24vw\] {
     width: 24vw;
+  }
+
+  .md\:w-9 {
+    width: 2.25rem;
+  }
+
+  .md\:w-10 {
+    width: 2.5rem;
+  }
+
+  .md\:w-\[\] {
+    width: ;
+  }
+
+  .md\:w-\[10vw\] {
+    width: 10vw;
   }
 
   .md\:flex-row {
