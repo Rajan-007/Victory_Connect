@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="./output.css" rel="stylesheet">
+    <title>Testimonialsx</title>
+    
+    <style>
+        .scrollbar-hide::-webkit-scrollbar {
+            display: none;
+        }
+        .testimonial-container {
+            position: relative;
+            margin: 20px;
+        }
+
+        .testimonial-image {
+            width: 600px;
+            height: auto;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        }
+
+        .rectangle-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: 1px solid #000;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+            opacity: 0.5;
+        }
+
+        .testimonial-buttons {
+            position: absolute;
+            bottom: 30px;
+            left: 20%;
+            transform: translateX(-50%);
+            text-align: center;
+        }
+
+        .testimonial-buttons button {
+            background-color: #7F60F9;
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="min-[vh-100] bg-white flex flex-col justify-between">
+        <!-- Header Section -->
+        <div class="py-4 pl-4 bg-[#7F60F9] flex justify-between">
+            <div class="flex justify-start">
+                <h1 class="text-4xl text-white font-sans font-bold">APP NAME</h1>
+            </div>
+            <div class="flex justify-evenly">
+                <i class="fas fa-envelope text-white text-2xl px-2 hover:underline hidden md:flex"></i>
+                <i class="fas fa-envelope text-white text-2xl px-2 hover:underline hidden md:flex"></i>
+                <i class="fa-solid fa-magnifying-glass text-white text-2xl px-2 hover:underline hidden md:flex"></i>
+                <i class="fa-solid fa-bars text-white text-2xl px-2 pr-10 md:hidden"></i>
+            </div>
+        </div>
+
+        <!-- Navigation Section -->
+        <div class="flex flex-row justify-around mt-5 overflow-x-auto scrollbar-hide mx-1">
+            <div class="bg-[#7F60F9] rounded-lg p-2 px-6 text-xl text-white font-semibold ml-[60%] sm:ml-0">Network</div>
+            <div class="bg-[#7F60F9] rounded-lg p-2 px-6 text-xl text-white font-semibold mx-2">Operations</div>
+            <div class="bg-[#7F60F9] rounded-lg p-2 px-6 text-xl text-white font-semibold mx-2">Admin</div>
+            <div class="bg-[#7F60F9] rounded-lg p-2 px-6 text-xl text-white font-semibold mx-2">Reports</div>
+            <div class="bg-[#7F60F9] rounded-lg p-2 px-6 text-xl text-white font-semibold mx-2">Updates</div>
+        </div>
+
+        <!-- Testimonials Section -->
+        <div class="flex flex-col mx-2 mt-5">
+            <div class="flex justify-between bg-[#7F60F9] p-2">
+                <h3 class="text-2xl font-bold px-2">Testimonials</h3>
+            </div>
+            
+            <!-- Image and Buttons Section with Rectangle Background -->
+            <div class="testimonial-container relative">
+                <img class="testimonial-image" src="/assets/welcome.png" alt="Your Image Alt Text">
+                <div class="rectangle-overlay"></div>
+                <div class="testimonial-buttons">
+                    <button>Add Registration</button>
+                </div>
+            </div>
+            <!-- Overlay Box -->
+            <div class="box rectangle fixed w-632 h-441 top-0 left-0 bg-white border-t-1 border-l-1 border-black shadow-2xl opacity-50"></div>
+        </div>
+
+        <!-- Testimonials Box -->
+
+        <div class="mb-5 bg-white text-center w-[100%]">
+            <div class="copyrights flex flex-col items-center justify-end mt-10 md:mt-8 h-[25vh] md:h-[100%]">
+                <p class="font-semibold text-lg">Copyright@2024 Appname. All rights Reserved</p>
+                <div class="flex flex-row justify-around">
+                    <a href=" " class="text-purple-600 hover:text-purple-800 hover:underline p-2 font-semibold">Terms of use</a>
+                    <p class="text-2xl font-bold flex items-center">|</p>
+                    <a href=" " class="text-purple-600 hover:text-purple-800 hover:underline p-2 font-semibold">Privacy policy</a>
+                    <p class="text-2xl font-bold flex items-center">|</p>
+                    <a href=" " class="text-purple-600 hover:text-purple-800 hover:underline p-2 font-semibold ">Browser policy</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
