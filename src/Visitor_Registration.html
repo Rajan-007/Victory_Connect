@@ -11,46 +11,7 @@
         .scrollbar-hide::-webkit-scrollbar {
             display: none;
         }
-        .testimonial-container {
-            position: relative;
-            margin: 20px;
-        }
-
-        .testimonial-image {
-            width: 600px;
-            height: auto;
-            border: 1px solid #ccc;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-        }
-
-        .rectangle-overlay {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            border: 1px solid #000;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-            opacity: 0.5;
-        }
-
-        .testimonial-buttons {
-            position: absolute;
-            bottom: 30px;
-            left: 20%;
-            transform: translateX(-50%);
-            text-align: center;
-        }
-
-        .testimonial-buttons button {
-            background-color: #7F60F9;
-            color: #fff;
-            padding: 10px 20px;
-            border-radius: 5px;
-            cursor: pointer;
-        }
+        
     </style>
 </head>
 <body>
@@ -80,19 +41,20 @@
         <!-- Testimonials Section -->
         <div class="flex flex-col mx-2 mt-5">
             <div class="flex justify-between bg-[#7F60F9] p-2">
-                <h3 class="text-2xl font-bold px-2">Testimonials</h3>
+                <h3 class="text-2xl font-semibold  px-2">Visitor Registration Portal</h3>
             </div>
             
             <!-- Image and Buttons Section with Rectangle Background -->
-            <div class="testimonial-container relative">
-                <img class="testimonial-image" src="/assets/welcome.png" alt="Your Image Alt Text">
-                <div class="rectangle-overlay"></div>
-                <div class="testimonial-buttons">
-                    <button>Add Registration</button>
+            <div class="">
+                <div class=" flex justify-center p-5 ">
+                    <div class="w-[90%] md:w-[40%] flex flex-col items-center justify-center border-t-black border-l-black border shadow-2xl shadow-slate-600">
+                        <img class="" src="/assets/welcome.png" alt="testimonial-image">
+                        <button class="bg-[#7F60F9] mt-52  md:mt-80 absolute h-12 w-80 text-xl text-white font-semibold border-t-1 ">Add Registration</button>
+                    </div> 
                 </div>
+           
             </div>
             <!-- Overlay Box -->
-            <div class="box rectangle fixed w-632 h-441 top-0 left-0 bg-white border-t-1 border-l-1 border-black shadow-2xl opacity-50"></div>
         </div>
 
         <!-- Testimonials Box -->
