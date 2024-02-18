@@ -6,20 +6,16 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link href="./output.css" rel="stylesheet">
-    <title>Personal Report</title>
+    <title>Victory Connect</title>
     
-    <style>
-        .scrollbar-hide::-webkit-scrollbar {
-            display: none;
-        }
-    </style>
+    
 
 </head>
 <body>
     <div class=" min-[vh-100]: bg-white flex flex-col justify-between">
         <div class=" py-4 pl-4 bg-[#7F60F9] flex justify-between  ">
             <div class="flex justify-start">
-                <h1 class="text-4xl text-white font-sans font-bold ">APP NAME</h1>
+                <h1 class="text-4xl text-white font-sans font-bold ">Victory Connect</h1>
             </div>
             <div class="flex justify-evenly ">
                 <i class="fas fa-envelope text-white text-2xl px-2 hover:underline hidden md:flex"></i>
@@ -28,46 +24,16 @@
                 <i class="fa-solid fa-bars  text-white text-2xl px-2 pr-10 md:hidden" ></i>
             </div>
         </div>
-
-        <div class=" flex flex-row justify-around mt-5 overflow-x-auto scrollbar-hide mx-1 ">
-            <a href="" class="bg-[#7F60F9] rounded-lg p-2 px-6 text-xl text-white font-semibold ml-[60%] sm:ml-0 hover:text-[#7F60F9] hover:bg-white hover:border-[#7F60F9] border">Network</a>
-            <a href="" class="bg-[#7F60F9] rounded-lg p-2 px-6 text-xl text-white font-semibold mx-2 hover:text-[#7F60F9] hover:bg-white hover:border-[#7F60F9] border">Operations</a>
-            <a href="" class="bg-[#7F60F9] rounded-lg p-2 px-6 text-xl text-white font-semibold mx-2 hover:text-[#7F60F9] hover:bg-white hover:border-[#7F60F9] border">Admin</a>
-            <a href="" class="bg-[#7F60F9] rounded-lg p-2 px-6 text-xl text-white font-semibold mx-2 hover:text-[#7F60F9] hover:bg-white hover:border-[#7F60F9] border">Reports</a>
-            <a href="./updates.html" class="bg-[#7F60F9] rounded-lg p-2 px-6 text-xl text-white font-semibold mx-2 hover:text-[#7F60F9] hover:bg-white hover:border-[#7F60F9] border">Updates</a>
-        </div>
-        
-        <div class="flex flex-col mx-2 mt-5  ">
-            <div class="flex justify-between bg-[#7F60F9] p-2">
-                <h3 class="text-2xl font-bold px-2">Groups</h3>
-                <div class="flex ">
-                    <select name="Group categories" id="Group categories" class="mx-2">
-                        <option value="Public group">Public group</option>
-                        <option value="Private group">Private group</option>
-                    </select>
-                    <div class="bg-white p-2 flex items-center">
-                        <input type="text" class=" hidden md:flex" placeholder="search " >
-                        <i class="fas fa-search "></i>
-                    </div>
-                    
-                </div>
-            </div>
-            <div class="flex flex-col justify-center items-center md:flex-row md:justify-between p-5   ">
-                <div class="">
-                    <label for="Group Type" class="font-semibold">Group Type :</label>
-                    <select name="Group Type" id="Group Type" class="border-2 p-2 ">
-                        <option value="Recent">Recent</option>
-                    </select>
-                </div>
-                <div class="p-2 ">
-                    <label for="Sortby" class="font-semibold">Sort By :</label>
-                    <select name="Sortby" id="Sortby" class="border-2 p-2">
-                        <option value="Recent">Recent</option>
-                    </select>
-                </div>
+        <div class="flex justify-center md:justify-start">
+            <div class="md:w-[20%] md:bg-[#f4f4f4] md:border-r min-[h-[100vh]]  lg:visible ">
+            
             </div>
             <!-- group profile card -->
-            <div class="">
+            <div class="md:w-[75%]  ">
+                <div class="flex justify-start items-center ml-8 my-10 ">
+                    <i class="fas fa-user bg-[#7F60F9] text-white text-4xl  p-2 mx-2 rounded-lg"> </i>
+                    <p class="text-3xl font-semibold">Communities</p>
+                </div>
                 <div class="border-2 p-5 md:mx-10 flex justify-between my-2">
                     <div class="flex flex-col md:flex-row justify-between md:items-center w-[100%]">
                         <div class="flex flex-row">
@@ -85,7 +51,10 @@
                                 <p class="">Creator : <span class="text-purple-800">stanley</span></p>
                             </div>
                         </div>
-                        <button class="bg-purple-800 text-white mt-2 md:mt-0 p-2 h-12 w-32 text-lg font-semibold">Join</button>
+                        <div class="">
+                            <button class="bg-[#7F60F9] text-white mt-2 md:mt-0 p-2 h-12 w-32 text-lg font-semibold rounded-lg mx-4 border-2 hover:text-[#7F60F9] hover:bg-white border-[#7F60F9]">edit</button>
+                            <button class="bg-[#7F60F9] text-white mt-2 md:mt-0 p-2 h-12 w-32 text-lg font-semibold rounded-lg hover:text-[#7F60F9] hover:bg-white  border-2 border-[#7F60F9]">Remove</button>    
+                        </div>
 
                     </div>
                     
@@ -107,8 +76,10 @@
                                 <p class="">Creator : <span class="text-purple-800">stanley</span></p>
                             </div>
                         </div>
-                        <button class="bg-purple-800 text-white mt-2 md:mt-0 p-2 h-12 w-32 text-lg font-semibold">Join</button>
-
+                        <div class="">
+                            <button class="bg-[#7F60F9] text-white mt-2 md:mt-0 p-2 h-12 w-32 text-lg font-semibold rounded-lg mx-4 hover:text-[#7F60F9] hover:bg-white border-2 border-[#7F60F9]">edit</button>
+                            <button class="bg-[#7F60F9] text-white mt-2 md:mt-0 p-2 h-12 w-32 text-lg font-semibold rounded-lg hover:text-[#7F60F9] hover:bg-white border-2 border-[#7F60F9]">Remove</button>    
+                        </div>
                     </div>
                     
                 </div>
@@ -129,13 +100,41 @@
                                 <p class="">Creator : <span class="text-purple-800">stanley</span></p>
                             </div>
                         </div>
-                        <button class="bg-purple-800 text-white mt-2 md:mt-0 p-2 h-12 w-32 text-lg font-semibold">Join</button>
-
+                        <div class="">
+                            <button class="bg-[#7F60F9] text-white mt-2 md:mt-0 p-2 h-12 w-32 text-lg font-semibold rounded-lg mx-4 hover:text-[#7F60F9] hover:bg-white border-2 border-[#7F60F9]">edit</button>
+                            <button class="bg-[#7F60F9] text-white mt-2 md:mt-0 p-2 h-12 w-32 text-lg font-semibold rounded-lg hover:text-[#7F60F9] hover:bg-white border-2 border-[#7F60F9]">Remove</button>    
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="border-2 p-5 md:mx-10 flex justify-between my-2">
+                    <div class="flex flex-col md:flex-row justify-between md:items-center w-[100%]">
+                        <div class="flex flex-row">
+                            <img src="../assets/Rectangle 31.png" alt="group profile">
+                            <div class="p-2 flex flex-col justify-around">
+                                <h4 class="text-purple-800 font-semibold text-xl">Business in singapore</h4>
+                                <p class="">Since 27/09/2018</p>
+                                <div class="flex">
+                                    <p class="">Topics :  <span class="text-purple-800">234</span></p>
+                                    <p class="">|</p>
+                                    <p class="">Posts : <span class="text-purple-800">234</span></p>
+                                    <p class="">|</p>
+                                    <p class="">Participants : <span class="text-purple-800">234</span></p>
+                                </div>
+                                <p class="">Creator : <span class="text-purple-800">stanley</span></p>
+                            </div>
+                        </div>
+                        <div class="">
+                            <button class="bg-[#7F60F9] text-white mt-2 md:mt-0 p-2 h-12 w-32 text-lg font-semibold rounded-lg mx-4 hover:text-[#7F60F9] hover:bg-white border-2 border-[#7F60F9]">edit</button>
+                            <button class="bg-[#7F60F9] text-white mt-2 md:mt-0 p-2 h-12 w-32 text-lg font-semibold rounded-lg  hover:text-[#7F60F9] hover:bg-white border-2 border-[#7F60F9]">Remove</button>    
+                        </div>
                     </div>
                     
                 </div>
             </div>
-                        <!-- group profile card ends-->
+                                    <!-- group profile card ends-->
+
+        </div>
 
             
         </div>

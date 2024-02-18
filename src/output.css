@@ -637,6 +637,11 @@ video {
   margin-right: auto;
 }
 
+.my-10 {
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem;
+}
+
 .my-2 {
   margin-top: 0.5rem;
   margin-bottom: 0.5rem;
@@ -714,6 +719,10 @@ video {
 
 .mt-8 {
   margin-top: 2rem;
+}
+
+.ml-8 {
+  margin-left: 2rem;
 }
 
 .inline-block {
@@ -800,6 +809,10 @@ video {
   width: 20rem;
 }
 
+.w-\[0\%\] {
+  width: 0%;
+}
+
 .w-\[100\%\] {
   width: 100%;
 }
@@ -830,6 +843,18 @@ video {
 
 .w-full {
   width: 100%;
+}
+
+.w-\[0\] {
+  width: 0;
+}
+
+.w-\[0v\] {
+  width: 0v;
+}
+
+.w-\[0vw\] {
+  width: 0vw;
 }
 
 .max-w-\[600px\] {
@@ -922,9 +947,18 @@ video {
   border-bottom-width: 2px;
 }
 
+.border-r {
+  border-right-width: 1px;
+}
+
 .border-\[\#110c26\] {
   --tw-border-opacity: 1;
   border-color: rgb(17 12 38 / var(--tw-border-opacity));
+}
+
+.border-\[\#7F60F9\] {
+  --tw-border-opacity: 1;
+  border-color: rgb(127 96 249 / var(--tw-border-opacity));
 }
 
 .border-\[\#94A3B8\] {
@@ -975,6 +1009,11 @@ video {
 .bg-\[\#7F60F9\] {
   --tw-bg-opacity: 1;
   background-color: rgb(127 96 249 / var(--tw-bg-opacity));
+}
+
+.bg-\[\#f4f4f4\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(244 244 244 / var(--tw-bg-opacity));
 }
 
 .bg-blue-600 {
@@ -1281,14 +1320,6 @@ video {
   --tw-shadow: var(--tw-shadow-colored);
 }
 
-.hover\:border-2:hover {
-  border-width: 2px;
-}
-
-.hover\:border:hover {
-  border-width: 1px;
-}
-
 .hover\:border-\[\#7F60F9\]:hover {
   --tw-border-opacity: 1;
   border-color: rgb(127 96 249 / var(--tw-border-opacity));
@@ -1469,6 +1500,10 @@ video {
     width: 15vw;
   }
 
+  .md\:w-\[25\%\] {
+    width: 25%;
+  }
+
   .md\:w-\[25vw\] {
     width: 25vw;
   }
@@ -1487,6 +1522,26 @@ video {
 
   .md\:w-\[60vw\] {
     width: 60vw;
+  }
+
+  .md\:w-\[70\%\] {
+    width: 70%;
+  }
+
+  .md\:w-\[7\%\] {
+    width: 7%;
+  }
+
+  .md\:w-\[75\%\] {
+    width: 75%;
+  }
+
+  .md\:w-\[2\%\] {
+    width: 2%;
+  }
+
+  .md\:w-\[20\%\] {
+    width: 20%;
   }
 
   .md\:flex-row {
@@ -1521,6 +1576,15 @@ video {
     justify-content: space-around;
   }
 
+  .md\:border-r {
+    border-right-width: 1px;
+  }
+
+  .md\:bg-\[\#f4f4f4\] {
+    --tw-bg-opacity: 1;
+    background-color: rgb(244 244 244 / var(--tw-bg-opacity));
+  }
+
   .md\:px-0 {
     padding-left: 0px;
     padding-right: 0px;
@@ -1534,5 +1598,11 @@ video {
   .md\:text-3xl {
     font-size: 1.875rem;
     line-height: 2.25rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .lg\:visible {
+    visibility: visible;
   }
 }
