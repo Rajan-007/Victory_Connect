@@ -11,6 +11,20 @@
     
 
 </head>
+<style>
+    @media only screen and (max-width: 750px) {
+        /* CSS rules for screens up to 762px wide */
+        #menu {
+            display: none;
+            width: 0px;
+            height: 100%;
+            position: fixed;
+            left: 0px;
+        }
+    }
+
+
+</style>
 <body>
     <div class=" min-[vh-100]: bg-white flex flex-col justify-between">
         <div class=" py-4 pl-4 bg-[#7F60F9] flex justify-between  ">
@@ -21,12 +35,46 @@
                 <i class="fas fa-envelope text-white text-2xl px-2 hover:underline hidden md:flex"></i>
                 <i class="fas fa-envelope text-white text-2xl px-2 hover:underline hidden md:flex"></i>
                 <i class="fa-solid fa-magnifying-glass  text-white text-2xl px-2 hover:underline hidden md:flex"></i>
-                <i class="fa-solid fa-bars  text-white text-2xl px-2 pr-10 md:hidden" ></i>
+                <i class="fa-solid fa-bars  text-white text-2xl px-2 pr-10 md:hidden" onclick="menu_controller()" ></i>
             </div>
         </div>
         <div class="flex justify-center md:justify-start">
-            <div class="md:w-[20vw] bg-[#faf8f8] md:border-r min-[h-[100vh]] sidenav w-0 fixed overflow-hidden  ">
-                <h4 class="text-purple-800 font-semibold text-xl absolute">Business in singapore</h4>
+            <div class=" md:w-[20vw] bg-[#faf8f8] md:border-r min-[h-[100vh]] sidenav w-0" id="menu">
+                <div class="flex justify-center items-center my-5 ">
+                    <img src="../assets/profile_pic.png" alt="profile_pic" class="mr-5">
+                    <p class="text-2xl font-semibold">John Doe</p>
+                </div>
+                <div class="flex flex-col mt-10">
+                    <a href="" class="flex justify-between items-center mx-5 text-xl text-slate-500 hover:text-[#8668ff] my-3 ">
+                        <p class="">Dashboard</p>
+                        <i class="fas fa-home  "></i>
+                    </a>
+                    <a href="" class="flex justify-between items-center mx-5 text-xl text-slate-500 hover:text-[#7f60f9] my-3">
+                        <p class="">User Accounts</p>
+                        <i class="fas fa-user  "></i>
+                    </a>
+                    
+                    <a href="" class="flex justify-between items-center mx-5 text-xl text-slate-500 hover:text-[#7f60f9] my-3">
+                        <p class="">Communities</p>
+                        <i class="fa-solid fa-people-group"></i>
+                    </a>
+                    
+                    <a href="" class="flex justify-between items-center mx-5 text-xl text-slate-500 hover:text-[#7f60f9] my-3">
+                        <p class="">Events</p>
+                        <i class="fas fa-calendar-days  "></i>
+                    </a>
+                    
+                    <a href="" class="flex justify-between items-center mx-5 text-xl text-slate-500 hover:text-[#7f60f9] my-3">
+                        <p class="">Reports</p>
+                        <i class="fas fa-chart-simple  "></i>
+                    </a>
+                    
+                    <a href="" class="flex justify-between items-center mx-5 text-xl text-slate-500 hover:text-[#7f60f9] my-3">
+                        <p class="">Settings</p>
+                        <i class="fas fa-gear  "></i>
+                    </a>
+                    
+                </div>
             </div>
             <!-- group profile card -->
             <div class="md:w-[75%] w-[80vw] ">
@@ -34,31 +82,7 @@
                     <i class="fas fa-user bg-[#7F60F9] text-white md:text-4xl  p-2 mx-2 rounded-lg"> </i>
                     <p class="md:text-3xl text-2xl font-semibold">Communities</p>
                 </div>
-                <div class="border-2 md:p-5 md:mx-10 flex justify-between my-2">
-                    <div class="flex flex-col md:flex-row justify-between md:items-center md:w-[100%]">
-                        <div class="flex flex-row">
-                            <img src="../assets/Rectangle 31.png" alt="group profile">
-                            <div class="p-2 flex flex-col justify-around">
-                                <h4 class="text-purple-800 font-semibold text-xl">Business in singapore</h4>
-                                <p class="">Since 27/09/2018</p>
-                                <div class="flex">
-                                    <p class="">Topics :  <span class="text-purple-800">234</span></p>
-                                    <p class="">|</p>
-                                    <p class="">Posts : <span class="text-purple-800">234</span></p>
-                                    <p class="">|</p>
-                                    <p class="">Participants : <span class="text-purple-800">234</span></p>
-                                </div>
-                                <p class="">Creator : <span class="text-purple-800">stanley</span></p>
-                            </div>
-                        </div>
-                        <div class="">
-                            <button class="bg-[#7F60F9] text-white mt-2 md:mt-0 p-2 h-12 w-32 text-lg font-semibold rounded-lg mx-4 border-2 hover:text-[#7F60F9] hover:bg-white border-[#7F60F9]">edit</button>
-                            <button class="bg-[#7F60F9] text-white mt-2 md:mt-0 p-2 h-12 w-32 text-lg font-semibold rounded-lg hover:text-[#7F60F9] hover:bg-white  border-2 border-[#7F60F9]">Remove</button>    
-                        </div>
-
-                    </div>
-                    
-                </div>
+               
                 <div class="border-2 p-5 md:mx-10 flex justify-between my-2">
                     <div class="flex flex-col md:flex-row justify-between md:items-center w-[100%]">
                         <div class="flex flex-row">
@@ -76,9 +100,9 @@
                                 <p class="">Creator : <span class="text-purple-800">stanley</span></p>
                             </div>
                         </div>
-                        <div class="">
-                            <button class="bg-[#7F60F9] text-white mt-2 md:mt-0 p-2 h-12 w-32 text-lg font-semibold rounded-lg mx-4 hover:text-[#7F60F9] hover:bg-white border-2 border-[#7F60F9]">edit</button>
-                            <button class="bg-[#7F60F9] text-white mt-2 md:mt-0 p-2 h-12 w-32 text-lg font-semibold rounded-lg hover:text-[#7F60F9] hover:bg-white border-2 border-[#7F60F9]">Remove</button>    
+                        <div class=" ">
+                            <button class="bg-[#7F60F9] text-white sm:mb-2  p-2 h-12 w-32 text-lg font-semibold rounded-lg mx-4 hover:text-[#7F60F9] hover:bg-white border-2 border-[#7F60F9]">edit</button>
+                            <button class="bg-[#7F60F9] text-white mt-2  p-2 h-12 w-32 text-lg font-semibold rounded-lg hover:text-[#7F60F9] hover:bg-white border-2 border-[#7F60F9]">Remove</button>    
                         </div>
                     </div>
                     
@@ -100,9 +124,9 @@
                                 <p class="">Creator : <span class="text-purple-800">stanley</span></p>
                             </div>
                         </div>
-                        <div class="">
-                            <button class="bg-[#7F60F9] text-white mt-2 md:mt-0 p-2 h-12 w-32 text-lg font-semibold rounded-lg mx-4 hover:text-[#7F60F9] hover:bg-white border-2 border-[#7F60F9]">edit</button>
-                            <button class="bg-[#7F60F9] text-white mt-2 md:mt-0 p-2 h-12 w-32 text-lg font-semibold rounded-lg hover:text-[#7F60F9] hover:bg-white border-2 border-[#7F60F9]">Remove</button>    
+                        <div class=" ">
+                            <button class="bg-[#7F60F9] text-white sm:mb-2  p-2 h-12 w-32 text-lg font-semibold rounded-lg mx-4 hover:text-[#7F60F9] hover:bg-white border-2 border-[#7F60F9]">edit</button>
+                            <button class="bg-[#7F60F9] text-white mt-2  p-2 h-12 w-32 text-lg font-semibold rounded-lg hover:text-[#7F60F9] hover:bg-white border-2 border-[#7F60F9]">Remove</button>    
                         </div>
                     </div>
                     
@@ -124,9 +148,9 @@
                                 <p class="">Creator : <span class="text-purple-800">stanley</span></p>
                             </div>
                         </div>
-                        <div class="">
-                            <button class="bg-[#7F60F9] text-white mt-2 md:mt-0 p-2 h-12 w-32 text-lg font-semibold rounded-lg mx-4 hover:text-[#7F60F9] hover:bg-white border-2 border-[#7F60F9]">edit</button>
-                            <button class="bg-[#7F60F9] text-white mt-2 md:mt-0 p-2 h-12 w-32 text-lg font-semibold rounded-lg  hover:text-[#7F60F9] hover:bg-white border-2 border-[#7F60F9]">Remove</button>    
+                        <div class=" ">
+                            <button class="bg-[#7F60F9] text-white sm:mb-2  p-2 h-12 w-32 text-lg font-semibold rounded-lg mx-4 hover:text-[#7F60F9] hover:bg-white border-2 border-[#7F60F9]">edit</button>
+                            <button class="bg-[#7F60F9] text-white mt-2  p-2 h-12 w-32 text-lg font-semibold rounded-lg hover:text-[#7F60F9] hover:bg-white border-2 border-[#7F60F9]">Remove</button>    
                         </div>
                     </div>
                     
@@ -152,4 +176,20 @@
         </div>
     </div>
 </body>
+<script>
+    let count=0;
+    function menu_controller(){
+        var myElement = document.getElementById("menu");
+        // Change its CSS properties
+        if(count%2===0){
+            myElement.style.display = "block";
+            myElement.style.width = "70%";
+        }else{
+            myElement.style.display = "none";
+            myElement.style.width = "0px";
+        }
+        count++;
+
+    }
+</script>
 </html>
