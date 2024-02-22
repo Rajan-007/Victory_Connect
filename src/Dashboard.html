@@ -76,78 +76,50 @@
                     
                 </div>
             </div>
-            <!-- group profile card -->
+
             <div class="md:w-[75%] w-[80vw] ">
                 <div class="flex justify-between items-center">
                     <div class="flex justify-start items-center md:ml-8 my-10 ">
-                        <i class="fas fa-user bg-[#7F60F9] text-white md:text-4xl  p-2 mx-2 rounded-lg"> </i>
-                        <a href="./Requests.html" class="md:text-3xl text-2xl font-semibold">User Accounts</a>
+                        <i class="fas fa-home bg-[#7F60F9] text-white md:text-2xl p-2 mx-2 rounded-lg"> </i>
+                        <a href="./Dashboard.html" class="md:text-4xl text-3xl font-semibold">Dashboard</a>
                     </div>
-                    <a href="./Requests.html" class="mr-10 flex hover:text-[#7F60F9]">
-                        <i class="fa-solid fa-handshake text-2xl font-semibold "></i>
-                        <p class="text-2xl font-semibold ml-4">Requests</p>
-                    </a>
+                    <select name="Time_period" id="Time_period" class="font-semibold md:text-xl ">
+                        <option value="Weekly">Weekly</option>
+                        <option value="Monthly">Monthly</option>
+                        <option value="Yearly">Yearly</option>
+                        <option value="24 hrs">Last 24 hrs</option>
+                    </select>
                 </div>
-                
-               
-                <div class="border-2 p-5 md:mx-10 flex justify-between my-2">
-                    <div class="flex flex-col md:flex-row justify-between md:items-center w-[100%]">
-                        <div class="flex flex-row">
-                            <img src="../assets/Rectangle 31.png" alt="group profile">
-                            <div class="p-2 flex flex-col justify-around">
-                                <h4 class="text-purple-800 font-semibold text-xl">Rajan</h4>
-                                <p class="">Community Name - <span>Member</span></p>
-            
-                            </div>
+                <div class="flex flex-col items-center md:flex-row md:justify-center md:mx-10 w-[100%]">
+                    <div class="flex flex-col">
+                        <div class="bg-[url('../assets/Dashboard_red.png')]  bg-no-repeat flex flex-col justify-around px-20 p-10 h-48 md:h-60 md:w-[25vw] w-[80vw] rounded-xl mx-4">
+                                <p class="text-xl font-semibold text-white">Members</p>
+                                <h2 class="text-2xl font-semibold text-white">245 Members</h2>
+                                <p class="text-md text-white  ">Increased by 10%</p>                            
                         </div>
-                        <div class=" flex  ">
-                            <button class="bg-[#7F60F9] text-white mt-2  p-2 h-12 w-32 text-lg font-semibold rounded-lg mx-4 hover:text-[#7F60F9] hover:bg-white border-2 border-[#7F60F9]">edit</button>
-                            <button class="bg-[#7F60F9] text-white mt-2  p-2 h-12 w-32 text-lg font-semibold rounded-lg hover:text-[#7F60F9] hover:bg-white border-2 border-[#7F60F9]">Remove</button>    
+                        <div class="bg-[url('../assets/Dashboard_green.png')]  bg-no-repeat flex flex-col justify-around px-20 p-10 h-48 md:h-60 md:w-[25vw] w-[80vw] rounded-xl mt-5  mx-4">
+                                <p class="text-xl font-semibold text-white">Communities</p>
+                                <h2 class="text-2xl font-semibold text-white">24 Communities</h2>
+                                <p class="text-md text-white  ">Increased by 10%</p>                            
                         </div>
                     </div>
-                    
-                </div>
-                <div class="border-2 p-5 md:mx-10 flex justify-between my-2">
-                    <div class="flex flex-col md:flex-row justify-between md:items-center w-[100%]">
-                        <div class="flex flex-row">
-                            <img src="../assets/Rectangle 31.png" alt="group profile">
-                            <div class="p-2 flex flex-col justify-center">
-                                <h4 class="text-purple-800 font-semibold text-xl">Rajan</h4>
-                                <p class="">Community Name - <span>Member</span></p>
-                            </div>
+                    <div class="flex flex-col">
+                        <div class="bg-[url('../assets/Dashboard_blue.png')]  bg-no-repeat flex flex-col justify-around px-20 p-10 h-48 md:h-60 md:w-[25vw] w-[80vw] rounded-xl mt-5 md:mt-0 mx-4 ">
+                                <p class="text-xl font-semibold text-white">Visitors</p>
+                                <h2 class="text-2xl font-semibold text-white">245 Visitors</h2>
+                                <p class="text-md text-white  ">Increased by 20%</p>                            
                         </div>
-                        <div class="flex ">
-                            <button class="bg-[#7F60F9] text-white mt-2  p-2 h-12 w-32 text-lg font-semibold rounded-lg mx-4 hover:text-[#7F60F9] hover:bg-white border-2 border-[#7F60F9]">edit</button>
-                            <button class="bg-[#7F60F9] text-white mt-2  p-2 h-12 w-32 text-lg font-semibold rounded-lg hover:text-[#7F60F9] hover:bg-white border-2 border-[#7F60F9]">Remove</button>    
+                        <div class="bg-[url('../assets/Dashboard_yellow.png')]  bg-no-repeat flex flex-col justify-around px-20 p-10 h-48 md:h-60 md:w-[25vw] w-[80vw] rounded-xl mt-5 mx-4">
+                                <p class="text-xl font-semibold text-white">Events</p>
+                                <h2 class="text-2xl font-semibold text-white">25 Events</h2>
+                                <p class="text-md text-white  ">Increased by 70%</p>                            
                         </div>
                     </div>
-                    
-                </div>
-                <div class="border-2 p-5 md:mx-10 flex justify-between my-2">
-                    <div class="flex flex-col md:flex-row justify-between md:items-center w-[100%]">
-                        <div class="flex flex-row">
-                            <img src="../assets/Rectangle 31.png" alt="group profile">
-                            <div class="p-2 flex flex-col justify-center">
-                                <h4 class="text-purple-800 font-semibold text-xl">Rajan</h4>
-                                <p class="">Community Name - <span>Member</span></p>
-                            </div>
-                        </div>
-                       <div class="flex ">
-                            <button class="bg-[#7F60F9] text-white mt-2  p-2 h-12 w-32 text-lg font-semibold rounded-lg mx-4 hover:text-[#7F60F9] hover:bg-white border-2 border-[#7F60F9]">edit</button>
-                            <button class="bg-[#7F60F9] text-white mt-2  p-2 h-12 w-32 text-lg font-semibold rounded-lg hover:text-[#7F60F9] hover:bg-white border-2 border-[#7F60F9]">Remove</button>    
-                        </div>
-                    </div>
-                    
-                </div>
-            </div>
-                                    <!-- group profile card ends-->
-
+                </div>                
+            </div>   
         </div>
-
-            
-        </div>
-        <div class=" mb-5 bg-white text-center  w-[100%]">
-            <div class="copyrights flex flex-col items-center justify-end mt-10 md:mt-8 h-[25vh] md:h-[100%]">
+        <div class=" mb-5 md:mt-20 bg-white text-center  w-[100%]">
+            <div class="copyrights flex flex-col items-center justify-end mt-10 md:mt-8 h-[10vh] md:h-[100%]">
                 <p class="font-semibold text-lg">Copyright@2024 Appname. All rights Reserved</p>
                 <div class="flex flex-row justify-around">
                     <a href=" " class=" text-purple-600 hover:text-purple-800 hover:underline p-2 font-semibold">Terms of use</a>
