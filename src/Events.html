@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="./output.css" rel="stylesheet">
+    <title>Victory Connect</title>
+    
+    
+
+</head>
+<style>
+    @media only screen and (max-width: 750px) {
+        /* CSS rules for screens up to 762px wide */
+        #menu {
+            display: none;
+            width: 0px;
+            height: 100%;
+            position: fixed;
+            left: 0px;
+        }
+    }
+
+
+</style>
+<body>
+    <div class=" min-[vh-100]: bg-white flex flex-col justify-between">
+        <div class=" py-4 pl-4 bg-[#7F60F9] flex justify-between  ">
+            <div class="flex justify-start">
+                <h1 class="text-4xl text-white font-sans font-bold ">Victory Connect</h1>
+            </div>
+            <div class="flex justify-evenly ">
+                <i class="fas fa-envelope text-white text-2xl px-2 hover:underline hidden md:flex"></i>
+                <i class="fas fa-envelope text-white text-2xl px-2 hover:underline hidden md:flex"></i>
+                <i class="fa-solid fa-magnifying-glass  text-white text-2xl px-2 hover:underline hidden md:flex"></i>
+                <i class="fa-solid fa-bars  text-white text-2xl px-2 pr-10 md:hidden" onclick="menu_controller()" ></i>
+            </div>
+        </div>
+        <div class="flex justify-center md:justify-start">
+            <div class=" md:w-[20vw] bg-[#faf8f8] md:border-r min-[h-[100vh]] sidenav w-0" id="menu">
+                <div class="flex justify-center items-center my-5 ">
+                    <img src="../assets/profile_pic.png" alt="profile_pic" class="mr-5">
+                    <p class="text-2xl font-semibold">John Doe</p>
+                </div>
+                <div class="flex flex-col mt-10">
+                    <a href="./Dashboard.html" class="flex justify-between items-center mx-6 text-xl text-slate-500 hover:text-[#8668ff] my-3 ">
+                        <p class="">Dashboard</p>
+                        <i class="fas fa-home  "></i>
+                    </a>
+                    <a href="./Useraccounts.html" class="flex justify-between items-center mx-6 text-xl text-slate-500 hover:text-[#7f60f9] my-3">
+                        <p class="">User Accounts</p>
+                        <i class="fas fa-user  "></i>
+                    </a>
+                    
+                    <a href="./Communities.html" class="flex justify-between items-center mx-6 text-xl text-slate-500 hover:text-[#7f60f9] my-3">
+                        <p class="">Communities</p>
+                        <i class="fa-solid fa-people-group"></i>
+                    </a>
+                    
+                    <a href="./Events.html" class="flex justify-between items-center mx-6 text-xl text-slate-500 hover:text-[#7f60f9] my-3">
+                        <p class="">Events</p>
+                        <i class="fas fa-calendar-days  "></i>
+                    </a>
+                    
+                    <a href="./Report.html" class="flex justify-between items-center mx-6 text-xl text-slate-500 hover:text-[#7f60f9] my-3">
+                        <p class="">Reports</p>
+                        <i class="fas fa-chart-simple  "></i>
+                    </a>
+                    
+                    <a href="" class="flex justify-between items-center mx-6 text-xl text-slate-500 hover:text-[#7f60f9] my-3">
+                        <p class="">Settings</p>
+                        <i class="fas fa-gear  "></i>
+                    </a>
+                    
+                </div>
+            </div>
+
+            <div class="md:w-[75%] w-[80vw] ">
+                <div class="flex justify-between items-center">
+                    <div class="flex justify-start items-center md:ml-8 mt-8 mb-5 ">
+                        <i class="fas fa-user bg-[#7F60F9] text-white md:text-4xl p-2 mx-2 rounded-lg"> </i>
+                        <a href="./Events.html" class="md:text-4xl text-3xl font-semibold">Events</a>
+                    </div>
+                </div>
+                <div class="flex flex-col items-center md:flex-row md:justify-evenly  w-[100%]">
+                    <div class="flex flex-col ">
+                        <div class="bg-[#fff] border border-black flex flex-col py-3  px-5   h-[100%] md:h-60 md:w-[20vw] w-[80vw] rounded-xl  mx-4">
+                                <p class="text-2xl font-semibold text-[#7F60F9] my-2">Event Title</p>
+                                <div class="px-5 flex flex-col justify-evenly h-[100%] ">
+                                    <p class="text-xl font-semibold ">Date : <span>12/2/2024</span></p>
+                                    <p class="text-xl font-semibold ">Time : <span>12/2/2024</span></p>
+                                    <p class="text-xl font-semibold ">Location : <span>12/2/2024</span></p>
+                                </div>    
+                                <div class="flex justify-around">
+                                    <button class="bg-[#7F60F9] flex justify-center items-center text-white mt-2  p-2 h-10 w-32 text-lg font-semibold rounded-lg mx-4 hover:text-[#7F60F9] hover:bg-white border-2 border-[#7F60F9]">edit</button>
+                                    <button class="bg-[#7F60F9] flex justify-center items-center text-white mt-2  p-2 h-10 w-32 text-lg font-semibold rounded-lg hover:text-[#7F60F9] hover:bg-white border-2 border-[#7F60F9]">Remove</button>    
+                                </div>                            
+                        </div>
+                        <div class="bg-[#fff] border border-black flex flex-col py-3  px-5   h-[100%] md:h-60 md:w-[20vw] w-[80vw] rounded-xl  mx-4 mt-5">
+                                <p class="text-2xl font-semibold text-[#7F60F9] my-2">Event Title</p>
+                                <div class="px-5 flex flex-col justify-evenly h-[100%] ">
+                                    <p class="text-xl font-semibold ">Date : <span>12/2/2024</span></p>
+                                    <p class="text-xl font-semibold ">Time : <span>12/2/2024</span></p>
+                                    <p class="text-xl font-semibold ">Location : <span>12/2/2024</span></p>
+                                </div>    
+                                <div class="flex justify-around">
+                                    <button class="bg-[#7F60F9] flex justify-center items-center text-white mt-2  p-2 h-10 w-32 text-lg font-semibold rounded-lg mx-4 hover:text-[#7F60F9] hover:bg-white border-2 border-[#7F60F9]">edit</button>
+                                    <button class="bg-[#7F60F9] flex justify-center items-center text-white mt-2  p-2 h-10 w-32 text-lg font-semibold rounded-lg hover:text-[#7F60F9] hover:bg-white border-2 border-[#7F60F9]">Remove</button>    
+                                </div>                            
+                        </div>
+                    </div>
+                    <div class="flex flex-col">
+                        <div class="bg-[#fff] border border-black flex flex-col py-3  px-5  h-[100%] md:h-60 md:w-[20vw] w-[80vw] rounded-xl  mx-5 mt-5 md:mt-0">
+                            <p class="text-2xl font-semibold text-[#7F60F9] my-2">Event Title</p>
+                            <div class="px-5 flex flex-col justify-evenly h-[100%] ">
+                                <p class="text-xl font-semibold ">Date : <span>12/2/2024</span></p>
+                                <p class="text-xl font-semibold ">Time : <span>12/2/2024</span></p>
+                                <p class="text-xl font-semibold ">Location : <span>12/2/2024</span></p>
+                            </div>    
+                            <div class="flex justify-around">
+                                <button class="bg-[#7F60F9] flex justify-center items-center text-white mt-2  p-2 h-10 w-32 text-lg font-semibold rounded-lg mx-4 hover:text-[#7F60F9] hover:bg-white border-2 border-[#7F60F9]">edit</button>
+                                <button class="bg-[#7F60F9] flex justify-center items-center text-white mt-2  p-2 h-10 w-32 text-lg font-semibold rounded-lg hover:text-[#7F60F9] hover:bg-white border-2 border-[#7F60F9]">Remove</button>    
+                            </div>                            
+                        </div>
+                        <div class="bg-[#fff] border border-black flex flex-col py-3  px-5   h-[100%] md:h-60 md:w-[20vw] w-[80vw] rounded-xl  mx-5 mt-5">
+                            <p class="text-2xl font-semibold text-[#7F60F9] my-2">Event Title</p>
+                            <div class="px-5 flex flex-col justify-evenly h-[100%] ">
+                                <p class="text-xl font-semibold ">Date : <span>12/2/2024</span></p>
+                                <p class="text-xl font-semibold ">Time : <span>12/2/2024</span></p>
+                                <p class="text-xl font-semibold ">Location : <span>12/2/2024</span></p>
+                            </div>    
+                            <div class="flex justify-around">
+                                <button class="bg-[#7F60F9] flex justify-center items-center text-white mt-2  p-2 h-10 w-32 text-lg font-semibold rounded-lg mx-4 hover:text-[#7F60F9] hover:bg-white border-2 border-[#7F60F9]">edit</button>
+                                <button class="bg-[#7F60F9] flex justify-center items-center text-white mt-2  p-2 h-10 w-32 text-lg font-semibold rounded-lg hover:text-[#7F60F9] hover:bg-white border-2 border-[#7F60F9]">Remove</button>    
+                            </div>                            
+                        </div>
+                    </div>
+                </div>                
+            </div>   
+        </div>
+        <div class=" mb-5 md:mt-5 bg-white text-center  w-[100%]">
+            <div class="copyrights flex flex-col items-center justify-end mt-10 md:mt-8 h-[10vh] md:h-[100%]">
+                <p class="font-semibold text-lg">Copyright@2024 Appname. All rights Reserved</p>
+                <div class="flex flex-row justify-around">
+                    <a href=" " class=" text-purple-600 hover:text-purple-800 hover:underline p-2 font-semibold">Terms of use</a>
+                    <p class="text-2xl font-bold flex items-center">|</p>
+                    <a href=" " class="text-purple-600 hover:text-purple-800 hover:underline p-2 font-semibold">Privacy policy</a>
+                    <p class="text-2xl font-bold flex items-center">|</p>
+                    <a href=" " class="text-purple-600 hover:text-purple-800 hover:underline p-2 font-semibold ">Browser policy</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    let count=0;
+    function menu_controller(){
+        var myElement = document.getElementById("menu");
+        // Change its CSS properties
+        if(count%2===0){
+            myElement.style.display = "block";
+            myElement.style.width = "70%";
+        }else{
+            myElement.style.display = "none";
+            myElement.style.width = "0px";
+        }
+        count++;
+
+    }
+</script>
+</html>
