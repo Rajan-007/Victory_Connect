@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="./output.css" rel="stylesheet">
+    <title>Personal Report</title>
+    
+    <style>
+        .scrollbar-hide::-webkit-scrollbar {
+            display: none;
+        }
+    </style>
+
+</head>
+<body>
+    <div class=" min-h-[100vh]: bg-white flex flex-col justify-between">
+        <div class=" py-4 pl-4 bg-[#7F60F9] flex justify-between  ">
+            <div class="flex justify-start">
+                <h1 class="text-4xl text-white font-sans font-bold ">Victory Connect</h1>
+            </div>
+            <div class="flex justify-evenly ">
+                <i class="fas fa-envelope text-white text-2xl px-2 hover:underline hidden md:flex"></i>
+                <i class="fas fa-envelope text-white text-2xl px-2 hover:underline hidden md:flex"></i>
+                <i class="fa-solid fa-magnifying-glass  text-white text-2xl px-2 hover:underline hidden md:flex"></i>
+                <i class="fa-solid fa-bars  text-white text-2xl px-2 pr-10 md:hidden" ></i>
+            </div>
+        </div>
+        <div class=" flex flex-row justify-around mt-5 overflow-x-auto scrollbar-hide mx-1 ">
+            <a href="" class="bg-[#7F60F9] rounded-lg p-2 px-6 text-xl text-white font-semibold ml-[60%] sm:ml-0 hover:text-[#7F60F9] hover:bg-white hover:border-[#7F60F9] border">Network</a>
+            <a href="" class="bg-[#7F60F9] rounded-lg p-2 px-6 text-xl text-white font-semibold mx-2 hover:text-[#7F60F9] hover:bg-white hover:border-[#7F60F9] border">Operations</a>
+            <a href="" class="bg-[#7F60F9] rounded-lg p-2 px-6 text-xl text-white font-semibold mx-2 hover:text-[#7F60F9] hover:bg-white hover:border-[#7F60F9] border">Admin</a>
+            <a href="" class="bg-[#7F60F9] rounded-lg p-2 px-6 text-xl text-white font-semibold mx-2 hover:text-[#7F60F9] hover:bg-white hover:border-[#7F60F9] border">Reports</a>
+            <a href="./updates.html" class="bg-[#7F60F9] rounded-lg p-2 px-6 text-xl text-white font-semibold mx-2 hover:text-[#7F60F9] hover:bg-white hover:border-[#7F60F9] border">Updates</a>
+        </div>
+        <div class="flex flex-col items-center md:min-h-[60vh]  min-h-[40vh]">
+            <div class=" bg-[#7f60f985] p-5 rounded-3xl  mx-2 md:mx-5 mt-5 min-h-[40vh] w-[90%]">
+                <div class="">
+                    <h1 class="text-3xl md:pl-5 pl-5 py-5">Email visitor invitation</h1>
+                </div>
+                <div class="flex flex-col items-start px-2 md:items-center ">
+                    <div class="flex flex-col md:items-center items-start md:flex-row md:justify-between md:min-w-[50%] min-w-[90%] m-2">
+                        <label for="title" class="p-2 text-xl flex md:min-w-[40%]">Title <sup class="text-2xl text-red-500">*</sup></label>
+                        <select name="title" id="title" class="md:min-w-[70%] min-w-[90%] h-auto flex items-center justify-between md:p-2 px-2">
+                            <option value="select">select title</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                        </select>
+                    </div>
+                    <div class="flex flex-col md:items-center items-start md:flex-row md:justify-between md:min-w-[50%] min-w-[90%] m-2">
+                        <label for="title" class="p-2 text-xl flex flex-nowrap  items-center md:min-w-[40%]">First Name <sup class="text-2xl text-red-500">*</sup></label>
+                        <input type="text" class="md:min-w-[70%] min-w-[90%] text-xl md:p-2 flex items-center  px-2">
+                    </div>
+                    <div class="flex flex-col md:items-center items-start md:flex-row md:justify-between md:min-w-[50%] min-w-[90%] m-2">
+                        <label for="title" class="p-2 text-xl flex flex-nowrap  items-center md:min-w-[40%]">Last Name <sup class="text-2xl text-red-500">*</sup></label>
+                        <input type="text" class="md:min-w-[70%] min-w-[90%] text-xl md:p-2 flex items-center  px-2">
+                    </div>
+                    <div class="flex flex-col md:items-center items-start md:flex-row md:justify-between md:min-w-[50%] min-w-[90%] m-2">
+                        <label for="title" class="p-2 text-xl flex flex-nowrap justify-start items-center md:min-w-[40%]">Visitor Company Name <sup class="text-2xl text-red-500">*</sup></label>
+                        <input type="text" class="md:min-w-[70%] min-w-[90%] text-xl md:p-2 flex items-center  px-2">
+                    </div>
+                    <div class="flex flex-col md:items-center items-start md:flex-row md:justify-between md:min-w-[50%] min-w-[90%] m-2">
+                        <label for="title" class="p-2 text-xl flex flex-nowrap justify-start items-center md:min-w-[40%]">Visitor Email Address <br>
+                            (a CC will be sent to you)  <sup class="text-2xl text-red-500">*</sup></label>
+                        <input type="text" class="md:min-w-[70%] min-w-[90%] text-xl md:p-2 flex items-center  px-2">
+                    </div>
+                    <div class="flex flex-col md:items-center items-start md:flex-row md:justify-between md:min-w-[45%] min-w-[90%] m-2">
+                        <label for="title" class="p-2 text-xl flex flex-nowrap justify-start items-center md:min-w-[45%]">  Personal Message that will appear 
+                            at the top of the invitation</label>
+                        <input type="text" class="md:w-[40%] w-[90%] text-xl min-h-20 flex flex-wrap items-center  px-2">
+                    </div>
+                    
+                    
+                    
+                </div>
+            </div>
+            
+        </div>
+        </div>
+            
+        <div class="copyrights flex flex-col items-center justify-end mt-10 md:mt-8 min-h-[5vh] md:h-[100%]">
+            <p class="font-semibold text-lg">Copyright@2024 Appname. All rights Reserved</p>
+            <div class="flex flex-row justify-around">
+                <a href=" " class=" text-purple-600 hover:text-purple-800 hover:underline p-2 font-semibold">Terms of use</a>
+                <p class="text-2xl font-bold flex items-center">|</p>
+                <a href=" " class="text-purple-600 hover:text-purple-800 hover:underline p-2 font-semibold">Privacy policy</a>
+                <p class="text-2xl font-bold flex items-center">|</p>
+                <a href=" " class="text-purple-600 hover:text-purple-800 hover:underline p-2 font-semibold ">Browser policy</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
