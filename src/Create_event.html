@@ -37,7 +37,7 @@
             <a href="./updates.html" class="bg-[#7F60F9] rounded-lg p-2 px-6 text-xl text-white font-semibold mx-2 hover:text-[#7F60F9] hover:bg-white hover:border-[#7F60F9] border">Updates</a>
         </div>
         
-        <div class="flex flex-col mx-2 mt-5  ">
+        <div class="flex flex-col mx-2 mt-5 ">
             <div class="flex justify-between bg-[#7F60F9] p-2">
                 <h3 class="text-2xl font-bold px-2 text-white flex items-center">Community</h3>
                 <div class="flex justify-evenly ">
@@ -52,35 +52,33 @@
             </div>
             <!-- group profile card -->
             <div class="min-h-[25vw] pt-5">
-                <div class="flex flex-col md:flex-row justify-evenly mt-5  py-5">
+                <div class="flex flex-col md:flex-row justify-evenly mt-5 py-5">
                     <div class="flex justify-start items-center">
-                        <img src="../assets/Create_community.png" class="w-[90%]" alt="create_community"> 
+                        <img src="../assets/Create_event.png" class="w-[90%]" alt="create_event">
                     </div>
                     <div class="flex flex-col items-center pt-5 md:pt-0  border border-black rounded-3xl shadow md:w-[30%] ">
-                        <h2 class="text-2xl font-semibold py-2 ">Create Community</h2>
-                        <div class="flex flex-col items-start w-[80%] mt-4">
-                            <label for="Community_Name" class="font-semibold">Community Name</label>
-                            <input type="text " class="ml-5 mt-2 border w-[80%] px-2 py-1.5" id="Community_Name" placeholder="Community Name">
+                        <h2 class="text-2xl font-semibold py-2 mt-3 ">Create Event</h2>
+                        <div class="flex flex-col items-start w-[80%] mt-5">
+                            <label for="Community_Name" class="font-semibold">Title</label>
+                            <input type="text " class="ml-5 mt-2 border w-[80%] px-2 py-1.5" id="Event_Name" placeholder="Event Name">
                         </div>
                         <div class="flex flex-col items-start w-[80%] mt-4">
-                            <label for="Description" class="font-semibold">Description</label>
-                            <input type="text " class="ml-5 mt-2 border w-[80%] px-2 py-1.5" id="Description" placeholder="Description">
+                            <label for="Description" class="font-semibold">Date</label>
+                            <input type="date" class="ml-5 mt-2 border w-[80%] px-2 py-1.5" id="Description" placeholder=" DD / MM / YYYY ">
                         </div>
                         <div class="flex flex-col items-start w-[80%] mt-4">
-                            <label for="Category" class="font-semibold">Category</label>
-                            <select name="Category" id="Category" class="ml-5 mt-2 border w-[80%] px-2 py-1.5">
-                                <option value="Software">Software</option>
-                                <option value="Hardware">Hardware</option>
-                                <option value="Accounts">Accounts</option>
-                                <option value="Design">Design</option>
-                            </select>
+                            <label for="Time" class="font-semibold">Time</label>
+                            <input type="time" class="ml-5 mt-2 border w-[80%] px-2 py-1.5">
                         </div>
                         <div class="flex flex-col items-start w-[80%] mt-5   ">
                             <label for="Upload_image" class="font-semibold">Upload_image</label>
-                            <div class="flex justify-between w-[80%] mt-4 ml-5 px-2 py-1.5 border">
-                                <input type="image" class="" id="Upload_image" placeholder="Upload_image">
-                                <button class="bg-[#3300FF] text-md h-8 px-2 rounded-lg text-white">Upload</button>
-                            </div>
+                            <select class="flex justify-between w-[80%] mt-4 ml-5 px-2 py-1.5 border">
+                                <option value="chennai">Chennai</option>
+                                <option value="Trichy">Trichy</option>
+                                <option value="Coimbatore">Coimbatore</option>
+                                <option value="Madurai">Madurai</option>
+                                <option value="Thanjavur">Thanjavur</option>
+                            </select>
                         </div>
                         <div class="flex justify-center items-center my-5">
                             <button class="bg-[#3300FF] text-md h-8 px-4  rounded-lg text-white"> Create </button>
